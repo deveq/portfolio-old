@@ -1,0 +1,16 @@
+$color-white: #ffffff;
+$color-gray: #808080;
+$text-white: #ffffff;
+$text-black: #333333;
+$text-orange: #F06000;
+
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin bg($name, $format: "png", $path: "/assets/images/") {
+    background-image: url("#{$path}#{$name}.#{$format}");
+}

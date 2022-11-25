@@ -1,0 +1,91 @@
+@import './default.scss';
+
+.Header {
+    @include flex-center(column);
+    // background: color image repeat position / size attachment
+    background: no-repeat center / cover;
+    @include bg('header-background','jpg');
+    height: 100vh;
+    transition: all 2s ease;
+    .nav-wrap {
+        width : 100vw;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: $color-gray;
+        transition: all 0.3s ease-in;
+        ul {
+            @include flex-center();
+            padding: 10px;
+            li {
+                padding: 10px;
+                a {
+                    color: $text-white;
+                    text-decoration: none;
+                    font-weight: bold;
+                    &:hover {
+                        color: $text-orange;
+                    }
+                }
+
+                &.selected a {
+                    color: coral;
+                }
+            }
+        }
+        &.transparent {
+            background-color: transparent;
+        }
+    }
+
+    .introduce {
+        h2 {
+            color: $text-white;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 20px;
+            color: $text-white;
+        }
+
+        ul {
+            @include flex-center();
+            column-gap: 10px;
+
+            a {
+                color: $text-white;
+                text-decoration: none;
+                position: relative;
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                border-radius: 25px;
+                h3 {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    text-indent: -100%;
+                    overflow: hidden;
+                    z-index: -1;
+                }
+
+                &.velog {
+                    background: $color-white no-repeat center / cover;
+                    @include bg('velog', 'jpeg');
+                }
+                &.github {
+                    background: $color-white no-repeat center -1px / 36px 36px;
+                    @include bg('github');
+                }
+                &.boj {
+                    background: $color-white no-repeat center / 25px 25px;
+                    @include bg('boj');
+                }
+            }
+        }
+    }
+}
