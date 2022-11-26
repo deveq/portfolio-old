@@ -1,0 +1,22 @@
+@import './default.scss';
+
+.Works {
+    background-color: lightblue;
+    padding: 20px 80px;
+    @include flex-center(column);
+    align-items: stretch;
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+        color: $color-white;
+        padding: 10px;
+    }
+
+    ul {
+        background-color: coral;
+        @include flex-center(column);
+        li {
+            height: 400px;
+        }
+    }
+}

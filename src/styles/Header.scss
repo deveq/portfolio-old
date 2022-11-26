@@ -3,7 +3,7 @@
 .Header {
     @include flex-center(column);
     // background: color image repeat position / size attachment
-    background: no-repeat center / cover;
+    background: no-repeat center / cover fixed;
     @include bg('header-background','jpg');
     height: 100vh;
     transition: all 2s ease;

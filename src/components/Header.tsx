@@ -44,7 +44,7 @@ const Header = () => {
                 <ul>
                     <li className='selected'><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#works">Works</a></li>
                     <li><a href="#footer">Footer</a></li>
                 </ul>
             </nav>

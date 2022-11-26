@@ -9,17 +9,23 @@ const About = () => {
                 <img src={profileImage} alt="profile" />
             </div>
             <div className="content">
-                <h2>about me</h2>
-                <p>
-                    안녕하세요
-                </p>
-                <h2>
-                    contact details
-                </h2>
-                <p>
-                    장진영
+                <div>
+                    <h2>about me</h2>
+                    <p>
+                        안녕하세요
+                    </p>
 
-                </p>
+                </div>
+                
+                <div>
+                    <h2>
+                        contact details
+                    </h2>
+                    <p>
+                        장진영
+                    </p>
+
+                </div>
             </div>
         </section>
     )

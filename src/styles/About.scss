@@ -1,28 +1,42 @@
 @import '../styles/default.scss';
 
 .About {
-    background-color: coral;
-    // height: 100vh;
+    // height: 400px;
+    padding: 50px;
+    background-color: $color-darkgray;
     @include flex-center();
     .profile {
         flex: 3;
-        background-color: red;
         img {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
         }
     }
 
     .content {
         flex: 7;
-        background-color: blue;
-        h2 {
-            text-transform: capitalize;
-        }
-    
-        p {
-    
+        height: 100%;
+        @include flex-center(column);
+        align-items: stretch;
+        div {
+            height: 30%;
+            padding: 20px;
+            h2 {
+                text-transform: capitalize;
+                color: $text-white;
+                text-align: left;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        
+            p {
+                margin-top: 5px;
+                color: $text-gray;
+                text-align: left; 
+                text-indent: 5px;           
+            }
+
         }
 
     }

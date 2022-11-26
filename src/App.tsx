@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.scss';
 import Header from './components/Header';
 import About from './components/About';
-import Portfolio from './components/Portfolio';
+import Works from './components/Works';
 import Footer from './components/Footer';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header />
       <About />
-      <Portfolio />
+      <Works />
       <Footer />
     </div>
   );
