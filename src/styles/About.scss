@@ -2,41 +2,46 @@
 
 .About {
     // height: 400px;
-    padding: 50px;
+    padding: 50px 0;
     background-color: $color-darkgray;
-    @include flex-center();
-    .profile {
-        flex: 3;
-        img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
+    .wrapper {
+        width: 1088px;
+        margin: 0 auto;
+        @include flex-center();
+        .profile {
+            flex: 3;
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
         }
-    }
-
-    .content {
-        flex: 7;
-        height: 100%;
-        @include flex-center(column);
-        align-items: stretch;
-        div {
-            height: 30%;
-            padding: 20px;
-            h2 {
-                text-transform: capitalize;
-                color: $text-white;
-                text-align: left;
-                font-size: 20px;
-                font-weight: bold;
+    
+        .content {
+            flex: 7;
+            height: 100%;
+            @include flex-center(column);
+            align-items: stretch;
+            div {
+                height: 30%;
+                padding: 20px;
+                h2 {
+                    text-transform: capitalize;
+                    color: $text-white;
+                    text-align: left;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            
+                p {
+                    margin-top: 5px;
+                    color: $text-gray;
+                    text-align: left; 
+                    text-indent: 5px;           
+                }
+    
             }
-        
-            p {
-                margin-top: 5px;
-                color: $text-gray;
-                text-align: left; 
-                text-indent: 5px;           
-            }
-
+    
         }
 
     }
