@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.5c4b4e81.css",
+    "main.js": "/portfolio/static/js/main.dce082cb.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/windee_browse.png": "/portfolio/static/media/windee_browse.031eaa579586c71ccd72.png",
+    "static/media/basic_windee_main.png": "/portfolio/static/media/basic_windee_main.fc8eb3baeedfb0520c17.png",
+    "static/media/windee_main.png": "/portfolio/static/media/windee_main.ee82017b7f01cfd03cf7.png",
+    "static/media/windee_nftdetail.png": "/portfolio/static/media/windee_nftdetail.6abd89131523c37af5b3.png",
+    "static/media/bookplate_search.png": "/portfolio/static/media/bookplate_search.b34ecc41775d4e80b816.png",
+    "static/media/bookplate_detail.png": "/portfolio/static/media/bookplate_detail.d0491f3c5ddde32fb354.png",
+    "static/media/basic_windee_browse.png": "/portfolio/static/media/basic_windee_browse.9b61a35bdd06668a7009.png",
+    "static/media/basic_windee_nftdetail.png": "/portfolio/static/media/basic_windee_nftdetail.3291efa755267943e653.png",
+    "static/media/header-background.jpg": "/portfolio/static/media/header-background.60a1d768614a2bdc6a69.jpg",
+    "static/media/wantit_main.png": "/portfolio/static/media/wantit_main.fcddcc09d7a6d6bc128d.png",
+    "static/media/basic_windee_stodetail.png": "/portfolio/static/media/basic_windee_stodetail.39e60a45fe784fc8411d.png",
+    "static/media/basic_windee_stomain.png": "/portfolio/static/media/basic_windee_stomain.7a4a875992fd681e79df.png",
+    "static/media/basic_windee_create.png": "/portfolio/static/media/basic_windee_create.9ad99e530aaacad7c72c.png",
+    "static/media/bookplate_main.png": "/portfolio/static/media/bookplate_main.a065edb64891e113a8fe.png",
+    "static/media/bookplate_login.png": "/portfolio/static/media/bookplate_login.7c1b6703848eaeadde25.png",
+    "static/media/wantit_chat.png": "/portfolio/static/media/wantit_chat.fd0f5daf3c13c0270d57.png",
+    "static/media/wantit_splash.png": "/portfolio/static/media/wantit_splash.5d27d47ae2d9286af288.png",
+    "static/media/profile.png": "/portfolio/static/media/profile.d1c8992722d1e777bde6.png",
+    "index.html": "/portfolio/index.html",
+    "main.5c4b4e81.css.map": "/portfolio/static/css/main.5c4b4e81.css.map",
+    "main.dce082cb.js.map": "/portfolio/static/js/main.dce082cb.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c4b4e81.css",
+    "static/js/main.dce082cb.js"
+  ]
+}
