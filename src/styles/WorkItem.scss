@@ -11,12 +11,14 @@
   box-shadow: 5px 3px 7px #ccccccaa;
   border-radius: 10px;
   a {
-    text-indent: 1000px;
+    overflow: hidden;
+    text-indent: -1000px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: -10;
   }
   &:hover {
     .background {

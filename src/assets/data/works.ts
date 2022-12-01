@@ -28,7 +28,7 @@ export const datas = [
     images: ["wantit_main", "wantit_splash", "wantit_chat"],
     cover: true,
     content: "셀러를 통해 중고휴대폰을 구매할 수 있는 앱",
-    skill: "ReactNative, GoogleMaps, Socket.js, Express",
+    skill: "ReactNative, GoogleMaps, Socket.IO, Express",
   },
   {
     title: "BookPlate",
