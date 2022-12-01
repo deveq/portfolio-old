@@ -1,18 +1,20 @@
-@import './default.scss';
+@import "./default.scss";
 
 .Works {
-    width: 1088px;
-    margin: 0 auto;
-    padding-top: 50px;
+  // width: 1088px;
+  max-width: 1088px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
 
-    .title {
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
+  .title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
 
-    .wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
 }

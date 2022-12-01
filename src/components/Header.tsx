@@ -53,9 +53,9 @@ const Header = () => {
                 <h2>프론트엔드 개발자 장진영</h2>
                 <p>프론트프론트</p>
                 <ul>
-                    <li><a href="https://solved.ac/profile/fleflefle1991" target='_blank' className='github' title="github" rel="noreferrer"><h3>github</h3></a></li>
+                    <li><a href="https://github.com/deveq" target='_blank' className='github' title="github" rel="noreferrer"><h3>github</h3></a></li>
                     <li><a href="https://velog.io/@deveq" className='velog' target='_blank' title="velog" rel="noreferrer"><h3>velog</h3></a></li>
-                    <li><a href="https://github.com/deveq" className='boj' target='_blank' title="baekjoon" rel="noreferrer"><h3>백준</h3></a></li>
+                    <li><a href="https://solved.ac/profile/fleflefle1991" className='boj' target='_blank' title="baekjoon" rel="noreferrer"><h3>백준</h3></a></li>
                 </ul>
             </div>
         </header>
