@@ -10,6 +10,14 @@
   background-color: $color-gray-opacity;
   box-shadow: 5px 3px 7px #ccccccaa;
   border-radius: 10px;
+  a {
+    text-indent: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
   &:hover {
     .background {
       opacity: 0.2;
@@ -38,11 +46,13 @@
     visibility: hidden;
     font-size: 30px;
     font-weight: bold;
+    color: $color-white;
   }
 
   p {
     visibility: hidden;
     margin-top: 15px;
     font-size: 20px;
+    color: $color-white;
   }
 }

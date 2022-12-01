@@ -1,0 +1,50 @@
+@import "./default.scss";
+
+.Percent {
+  padding-left: 5px;
+  & + & {
+    margin-top: 10px;
+  }
+  .title {
+    color: $text-gray;
+    margin-bottom: 5px;
+  }
+
+  .bar-container {
+    margin-left: 5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: $color-lightgray;
+    @include flex-center();
+    position: relative;
+
+    span {
+      @include flex-center();
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      mix-blend-mode: difference;
+      font-weight: bold;
+      color: $color-white;
+      &::after {
+        content: "%";
+      }
+    }
+
+    .bar {
+      height: 100%;
+      background-color: $color-blue;
+      //   border-radius: 5px;
+    }
+
+    &::after {
+      content: "";
+      height: 100%;
+      flex: 1;
+    }
+  }
+}

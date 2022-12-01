@@ -37,6 +37,9 @@ const WorkItem: FC<WorkItemProps> = ({
         setIsModalOpen(true);
       }}
     >
+      <a href="#" title={title}>
+        {title}
+      </a>
       <img
         src={require(`../assets/images/${images[0]}.png`)}
         alt=""

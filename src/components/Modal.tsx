@@ -18,7 +18,16 @@ const Modal: FC<ModalProps> = () => {
   );
   const data = datas[selectedIndex];
 
-  useEffect(() => {}, [isModalOpen]);
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.cssText = `overflow-y: hidden;`;
+    }
+
+    return () => {
+      document.body.style.cssText = "";
+    };
+  }, [isModalOpen]);
+  // }, []);
   return createPortal(
     <div className={cn("Modal", { open: isModalOpen })}>
       {isModalOpen && (
