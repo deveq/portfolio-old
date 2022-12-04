@@ -1,13 +1,21 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {
+  forwardRef,
+  useEffect,
+  useRef,
+  useState,
+  ComponentPropsWithRef,
+} from "react";
 import "../styles/Header.scss";
 import cn from "classnames";
 
-const Header = () => {
-  const ref = useRef<HTMLDivElement>(null);
+interface HeaderProps extends ComponentPropsWithRef<"header"> {}
+
+const Header = forwardRef<HTMLDivElement, HeaderProps>((_, ref) => {
+  const introduceRef = useRef<HTMLDivElement>(null);
   const [isNavbarBgTransparent, setIsNavbarBgTransparent] = useState(true);
 
   useEffect(() => {
-    if (!ref.current) return;
+    if (!introduceRef.current) return;
 
     const callback: IntersectionObserverCallback = ([entry], observer) => {
       const { isIntersecting, intersectionRatio } = entry;
@@ -26,12 +34,12 @@ const Header = () => {
 
     const io = new IntersectionObserver(callback, options);
 
-    io.observe(ref.current);
+    io.observe(introduceRef.current);
 
     return () => {
       io.disconnect();
     };
-  }, [ref]);
+  }, [introduceRef]);
 
   return (
     <header id="header" className="Header">
@@ -52,7 +60,7 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className="introduce" ref={ref}>
+      <div className="introduce" ref={introduceRef}>
         <h2>프론트엔드 개발자 장진영</h2>
         <p></p>
         <ul>
@@ -93,6 +101,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+});
 
 export default Header;

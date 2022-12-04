@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useRef, forwardRef, ComponentPropsWithRef } from "react";
 import "../styles/Footer.scss";
 
-const Footer = () => {
+interface FooterProps extends ComponentPropsWithRef<"footer"> {}
+
+const Footer = forwardRef<HTMLDivElement, FooterProps>((_, ref) => {
+  // const ref = useRef<HTMLDivElement>(null);
   return (
-    <footer id="footer" className="Footer">
+    <footer id="footer" className="Footer" ref={ref}>
       <ul>
         <li className="abcd">
           이메일: <a href="mailto:deveq@kakao.com">deveq@kakao.com</a>
@@ -13,6 +16,6 @@ const Footer = () => {
       </ul>
     </footer>
   );
-};
+});
 
 export default Footer;

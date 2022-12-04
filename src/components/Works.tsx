@@ -1,14 +1,16 @@
-import React from "react";
+import React, { ComponentPropsWithRef, forwardRef } from "react";
 import "../styles/Works.scss";
 import Modal from "./Modal";
 import WorkItem from "./WorkItem";
 import { datas } from "../assets/data/works";
 
-const Works = () => {
+interface WorksProps extends ComponentPropsWithRef<"section"> {}
+
+const Works = forwardRef<HTMLDivElement, WorksProps>((_, ref) => {
   return (
     <section id="works" className="Works">
       <h3 className="title">Works</h3>
-      <div className="wrapper">
+      <div className="wrapper" ref={ref}>
         {datas.map((item, index) => (
           <WorkItem
             index={index}
@@ -24,6 +26,6 @@ const Works = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Works;

@@ -5,7 +5,7 @@
   //   height: 600px;
   height: 300px;
   @include flex-center(column);
-  cursor: pointer;
+  // cursor: pointer;
   overflow: hidden;
   background-color: $color-gray-opacity;
   box-shadow: 5px 3px 7px #ccccccaa;

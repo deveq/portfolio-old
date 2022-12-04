@@ -16,5 +16,24 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+
+    > div {
+      transform: translateX(100px);
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      @for $i from 1 to 5 {
+        &:nth-child(#{$i}) {
+          transition-delay: ($i - 1) * 0.2s;
+        }
+      }
+    }
+
+    &.animate {
+      > div {
+        transform: translateX(0);
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
   }
 }

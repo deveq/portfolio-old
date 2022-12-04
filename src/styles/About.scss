@@ -23,9 +23,26 @@
       height: 100%;
       @include flex-center(column);
       align-items: stretch;
+
+      &.animate {
+        > div {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
       > div {
         height: 30%;
         padding: 20px;
+        transform: translateX(100px);
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        @for $i from 1 to 4 {
+          &:nth-child(#{$i}) {
+            transition-delay: ($i - 1) * 0.1s;
+          }
+        }
+
         h2 {
           text-transform: capitalize;
           color: $text-white;
